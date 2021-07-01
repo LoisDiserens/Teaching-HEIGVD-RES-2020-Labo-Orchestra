@@ -112,7 +112,7 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | What **payload** should we put in the UDP datagrams? |
 | | Depuis, "TCP-based protocol to be implemented by the Auditor application" on voit qu'il nous faut 3 données:<br />- UUID<br />- Le son joué par l'instrumentt<br />- Le timestamp du début depuis que le "musician" s'est mis à jouer ("active since") |
 |Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
-| | - Sender (Musician): une map car c'est une liste de pair, cela permet donc de lister le nom de l'instrument avec le son qu'il produit<br />- Receiver (Auditor): |
+| | - Sender (Musician): une map car c'est une liste de pair, cela permet donc de lister le nom de l'instrument avec le son qu'il produit<br />- Receiver (Auditor): une map qui liste les musiciens acitfs les 5 dernières secondes. |
 
 
 ## Task 2: implement a "musician" Node.js application
